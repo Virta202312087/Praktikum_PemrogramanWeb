@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Formulir Pendaftaran Mahasiswa Baru</title>
+<style>
+  body { font-family: Arial,sans-serif; background:#cce7ff; margin:20px; color:#003a99; }
+  h1 { text-align:center; }
+  form { background:#f0f7ff; max-width:350px; margin:0 auto; padding:15px; border-radius:6px; }
+  label { display:block; margin-top:10px; }
+  input, select, textarea { width:100%; padding:8px; margin-top:5px; border:1px solid #4a7ec8; border-radius:4px; }
+  input[type=radio], input[type=checkbox] { width:auto; margin-right:5px; }
+  fieldset { border:1px solid #4a7ec8; border-radius:5px; padding:10px; margin-top:15px; background:#e6f0fc; }
+  legend { font-weight:bold; color:#003a99; }
+  input[type=submit] { background:#004aad; color:#fff; border:none; padding:10px; margin-top:15px; cursor:pointer; 
+    border-radius:4px; }
+  input[type=submit]:hover { background:#003a8c; }
+  p { text-align:center; margin-top:20px; }
+  a { color:#003a99; text-decoration:underline; }
+  img { display:block; margin:0 auto 15px; max-width:150px; }
+</style>
+</head>
+<body>
+
+<h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+
+<img src="Logo Kampus.png" alt="Logo Kampus" />
+
+<form action="#" method="post">
+  <fieldset>
+    <legend>Data Pribadi</legend>
+    <label>Nama Lengkap:
+      <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+    </label>
+    <label>Email:
+      <input type="email" name="email" placeholder="Masukkan email" required>
+    </label>
+    <label>Jenis Kelamin:</label>
+    <label><input type="radio" name="jenis_kelamin" value="Pria" required> Pria</label>
+    <label><input type="radio" name="jenis_kelamin" value="Wanita" required> Wanita</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Hobi</legend>
+    <label><input type="checkbox" name="hobi[]" value="Membaca"> Membaca</label>
+    <label><input type="checkbox" name="hobi[]" value="Olahraga"> Olahraga</label>
+    <label><input type="checkbox" name="hobi[]" value="Musik"> Musik</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Jurusan</legend>
+    <label>Pilih Jurusan:
+      <select name="jurusan" required>
+        <option value="">--Pilih Jurusan--</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Teknik Elektro">Teknik Elektro</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+        <option value="Bisnis Digital">Bisnis Digital</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Alamat</legend>
+    <label>Alamat Lengkap (opsional):
+      <textarea name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea>
+    </label>
+  </fieldset>
+
+  <input type="submit" value="Daftar" />
+</form>
+
+<p>Untuk informasi lebih lanjut, kunjungi <a href="informasi_kampus.html">halaman informasi kampus</a>.</p>
+
+</body>
+</html>

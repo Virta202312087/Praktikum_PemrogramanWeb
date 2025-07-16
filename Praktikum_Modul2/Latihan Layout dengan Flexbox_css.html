@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  justify-content: space-between; 
+  /* Alternatif: space-around atau space-evenly */
+  align-items: center;
+  height: 150px; /* Agar align-items center terlihat jelas */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.item {
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 10px;
+  flex: 1; /* Membuat item memiliki lebar sama */
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="item">Item A</div>
+  <div class="item">Item B</div>
+  <div class="item">Item C</div>
+</div>
+</body>
+</html>

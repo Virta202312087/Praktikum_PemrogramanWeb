@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #2196F3; /* Biru untuk desktop */  margin: 0;  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;}
+.grid-container {
+  display: grid;  grid-template-columns: repeat(3, 1fr);  gap: 10px;  padding: 10px;}
+.grid-item {
+  background-color: white;  color: #2196F3;  padding: 20px;  font-size: 20px;
+  text-align: center;  border-radius: 8px;  transition: font-size 0.3s ease;}
+/* Responsive untuk layar kecil */
+@media only screen and (max-width: 600px) {
+  body {    background-color: #f44336; /* Merah untuk smartphone */  }
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 kolom */  }
+  .grid-item {
+    font-size: 28px; /* Ukuran teks lebih besar di layar kecil */  }
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item">Item 1</div>
+  <div class="grid-item">Item 2</div>
+  <div class="grid-item">Item 3</div>
+</div>
+</body>
+</html>
